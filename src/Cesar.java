@@ -4,9 +4,12 @@
 
 public class Cesar {
     int cle;
+    
 
     public Cesar(int cle) {
-        this.cle = cle;
+        this.cle = cle%26;
+        if (cle<0)
+        	this.cle+=26;
     }
 
     public char code(char c) {
